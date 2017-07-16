@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.example.baselessonsweather.CityWeatherActivity">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent" >
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="40dp"
+                    android:id="@+id/txt_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="30sp"
+                    android:textColor="@color/city_list_text_color"
+                    android:text="南宁地区" />
+
+                <TextView
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/txt_city"
+                    android:id="@+id/txt_tmp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="80sp"
+                    android:textColor="@color/city_list_text_color"
+                    android:text="30" />
+
+                <TextView
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/txt_tmp"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/txt_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="@color/city_list_text_color"
+                    android:text="多云" />
+
+                <TextView
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/txt_info"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/txt_m"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10sp"
+                    android:textColor="@color/city_list_text_color"
+                    android:typeface="normal"
+                    android:text="25 / 36" />
+
+                <TextView
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/txt_m"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginRight="30dp"
+                    android:id="@+id/txt_pm25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10sp"
+                    android:textColor="@color/city_list_text_color"
+                    android:typeface="normal"
+                    android:text="35 - 优" />
+
+                <ImageView
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/txt_m"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginRight="5dp"
+                    android:id="@+id/img_pm25"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:background="@drawable/air_level_1" />
+
+                <View
+                    android:layout_below="@id/img_pm25"
+                    android:id="@+id/hr_center"
+                    android:layout_marginTop="5dp"
+                    android:layout_height="1dp"
+                    android:layout_width="match_parent"
+                    android:background="@color/city_search_hint_color" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+    <View
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/hr_bottom"
+        android:layout_marginBottom="50dp"
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:background="@color/city_list_line_color" />
+    <ImageView
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginBottom="13dp"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/img_leftbottom"
+        android:layout_width="20dp"
+        android:layout_height="24dp"
+        android:background="@drawable/go_page_icon" />
+    <ImageView
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="2dp"
+        android:layout_marginRight="15dp"
+        android:id="@+id/img_rightbottom"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:background="@drawable/go_city" />
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="city_search_hint_color">#42ffffff</color>
+    <color name="city_list_line_color">#8affffff</color>
+    <color name="city_list_text_color">#ffffffff</color>
+    <color name="rain_sky_night_start">#041d31</color>
+    <color name="rain_sky_night_end">#081621</color>
+</resources>

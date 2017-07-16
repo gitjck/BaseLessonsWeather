@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">基础课电闪雷鸣</string>
+    <string name="searchview_hint">搜索城市</string>
+    <string name="title_activity_splash">SplashActivity</string>
+</resources>
